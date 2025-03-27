@@ -1,0 +1,589 @@
+/* Estilos Base */
+:root {
+  --primary: #00ff88;
+  --secondary: #ff00ff;
+  --dark: #0a0f1f;
+  --darker: #1a103f;
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --neon-shadow: 0 0 10px rgba(0, 255, 136, 0.5),
+    0 0 20px rgba(0, 255, 136, 0.3), 0 0 30px rgba(0, 255, 136, 0.1);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, var(--dark), var(--darker));
+  color: white;
+  min-height: 100vh;
+}
+
+/* Containers */
+.glass-container {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 255, 136, 0.1),
+    rgba(255, 0, 255, 0.1)
+  );
+  z-index: -1;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--neon-shadow);
+}
+
+/* Títulos */
+h1,
+h2,
+h3 {
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* Opções de Serviço */
+.service-option,
+.specialty-option,
+.period-option,
+.plan-option,
+.category-option,
+.product-option {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-option::before,
+.specialty-option::before,
+.period-option::before,
+.plan-option::before,
+.category-option::before,
+.product-option::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 255, 136, 0.1),
+    rgba(255, 0, 255, 0.1)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.service-option:hover::before,
+.specialty-option:hover::before,
+.period-option:hover::before,
+.plan-option:hover::before,
+.category-option:hover::before,
+.product-option:hover::before {
+  opacity: 1;
+}
+
+.service-option:hover,
+.specialty-option:hover,
+.period-option:hover,
+.plan-option:hover,
+.category-option:hover,
+.product-option:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--neon-shadow);
+  border-color: var(--primary);
+}
+
+/* Inputs Modernos */
+.modern-input-container {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-icon {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+.modern-input {
+  width: 100%;
+  padding: 1rem 1rem 1rem 3.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  border-radius: 0.5rem;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.modern-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(0, 255, 136, 0.2);
+}
+
+.modern-input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.modern-input:focus::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.modern-input-container.focused .input-icon {
+  color: var(--secondary);
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Estilos para campos com erro */
+.modern-input.error {
+  border-color: #ff4444;
+  box-shadow: 0 0 10px rgba(255, 68, 68, 0.3);
+}
+
+.error-message {
+  background: rgba(255, 68, 68, 0.1);
+  border: 1px solid #ff4444;
+  color: #ff4444;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  text-align: center;
+  animation: slideIn 0.3s ease;
+}
+
+/* Botões */
+.neon-button {
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.neon-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: 0.5s;
+}
+
+.neon-button:hover::before {
+  left: 100%;
+}
+
+.neon-button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--neon-shadow);
+}
+
+/* Cards de Confiança */
+.trust-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.trust-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--neon-shadow);
+  border-color: var(--primary);
+}
+
+/* Animações */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 255, 136, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 255, 136, 0.5);
+  }
+}
+
+.glass-container {
+  animation: glow 3s infinite;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .glass-container {
+    padding: 1rem;
+  }
+
+  .glass-card {
+    padding: 1rem;
+  }
+
+  .modern-input {
+    padding: 0.8rem 0.8rem 0.8rem 3rem;
+  }
+
+  .input-icon {
+    left: 0.8rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* Efeitos de Seleção */
+.service-option.selected,
+.specialty-option.selected,
+.period-option.selected,
+.plan-option.selected,
+.category-option.selected,
+.product-option.selected {
+  border-color: var(--primary);
+  box-shadow: var(--neon-shadow);
+  transform: translateY(-5px);
+}
+
+/* Scrollbar Personalizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
+}
+
+/* Progress Bar */
+.progress-bar {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.progress-steps::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--glass-border);
+  z-index: 1;
+}
+
+.step {
+  position: relative;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  background: var(--dark);
+  border: 2px solid var(--glass-border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.step.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  box-shadow: var(--neon-shadow);
+}
+
+.step.completed {
+  background: var(--secondary);
+  border-color: var(--secondary);
+}
+
+.step-number {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Funnel Options */
+.funnel-option {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.funnel-option::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 255, 136, 0.1),
+    rgba(255, 0, 255, 0.1)
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.funnel-option:hover::before {
+  opacity: 1;
+}
+
+.funnel-option:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--neon-shadow);
+  border-color: var(--primary);
+}
+
+.funnel-option.selected {
+  background: rgba(0, 255, 136, 0.1);
+  border-color: var(--primary);
+  box-shadow: var(--neon-shadow);
+}
+
+/* Steps Container */
+.steps-container {
+  min-height: 400px;
+  position: relative;
+  perspective: 1000px;
+}
+
+.steps-container .glass-card {
+  animation: slideIn 0.5s ease;
+  transform-origin: center;
+  backface-visibility: hidden;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+}
+
+/* Funnel Transition */
+.funnel-transition {
+  animation: funnelTransition 0.5s ease;
+}
+
+@keyframes funnelTransition {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Success Message */
+.success-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 255, 136, 0.2);
+  border: 1px solid var(--primary);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  animation: slideInRight 0.3s ease;
+  z-index: 1000;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Navigation Buttons */
+.neon-button {
+  min-width: 120px;
+  text-align: center;
+}
+
+.prev-step {
+  background: linear-gradient(45deg, var(--secondary), var(--primary));
+}
+
+.next-step {
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .progress-bar {
+    padding: 0 1rem;
+  }
+
+  .step {
+    width: 30px;
+    height: 30px;
+  }
+
+  .step-number {
+    font-size: 1rem;
+  }
+
+  .steps-container {
+    min-height: 300px;
+  }
+}
+
+/* Estilos para opções de porte do pet */
+.size-option {
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.size-option:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-color: var(--secondary);
+}
+
+.size-option.selected {
+  transform: translateY(-10px);
+  border-color: var(--secondary);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.05)
+  );
+}
+
+.size-option::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.size-option:hover::after,
+.size-option.selected::after {
+  opacity: 1;
+}
+
+/* Estilos para sugestões de email e WhatsApp */
+.modern-input[list] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 20px;
+  padding-right: 40px;
+}
+
+.modern-input[list]:focus {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ff6b6b' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+}
+
+/* Estilo para o datalist */
+datalist {
+  background: var(--glass-bg);
+  border: 1px solid var(--secondary);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+datalist option {
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+datalist option:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}

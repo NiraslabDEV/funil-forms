@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo - Funis de Conversão Pet Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="demo-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-gradient-to-br from-[#0a0f1f] to-[#1a103f] text-white min-h-screen"
+  >
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section py-20 relative overflow-hidden">
+        <div class="container mx-auto px-4">
+          <div class="hero-content max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-6 text-white">
+              Funis de Conversão Premium
+            </h1>
+            <p class="text-2xl mb-10">
+              5 modelos de funis que transformam a experiência do seu Pet Shop
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Funis Section -->
+      <section class="py-16">
+        <div class="container mx-auto px-4">
+          <!-- Funil 1: Banho e Tosa -->
+          <div class="glass-container p-8 rounded-xl mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-center">
+              Funil 1: Banho e Tosa Premium
+            </h2>
+            <div class="space-y-8">
+              <!-- Etapa 1: Serviço -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">
+                  Etapa 1: Escolha do Serviço
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div
+                    class="service-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">🛁</span>
+                    <h4 class="font-bold">Banho</h4>
+                    <p class="text-sm">A partir de R$ 45</p>
+                  </div>
+                  <div
+                    class="service-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">✂️</span>
+                    <h4 class="font-bold">Tosa</h4>
+                    <p class="text-sm">A partir de R$ 60</p>
+                  </div>
+                  <div
+                    class="service-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">✨</span>
+                    <h4 class="font-bold">Banho + Tosa</h4>
+                    <p class="text-sm">A partir de R$ 90</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 2: Porte -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Etapa 2: Porte do Pet</h3>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                  <div
+                    class="size-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">🐕</span>
+                    <h4 class="font-bold">Mini</h4>
+                    <p class="text-sm">Até 5kg</p>
+                  </div>
+                  <div
+                    class="size-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">🐕</span>
+                    <h4 class="font-bold">Pequeno</h4>
+                    <p class="text-sm">5-10kg</p>
+                  </div>
+                  <div
+                    class="size-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">🐕</span>
+                    <h4 class="font-bold">Médio</h4>
+                    <p class="text-sm">10-20kg</p>
+                  </div>
+                  <div
+                    class="size-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">🐕</span>
+                    <h4 class="font-bold">Grande</h4>
+                    <p class="text-sm">20kg+</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 3: Dados do Pet -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Etapa 3: Dados do Pet</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="modern-input-container">
+                    <div class="input-icon">🐾</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Nome do Pet</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">🎂</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Idade</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">🐕</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Raça</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">⚖️</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Peso Aproximado</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 4: Dados do Tutor -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Etapa 4: Dados do Tutor</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="modern-input-container">
+                    <div class="input-icon">👤</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Nome Completo</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">📱</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">WhatsApp</label>
+                      <input type="tel" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">📧</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">E-mail</label>
+                      <input type="email" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">📍</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Endereço</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 5: Confiança -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">
+                  Etapa 5: Por que nos escolher?
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div class="trust-card p-4 rounded-lg">
+                    <span class="block text-3xl mb-2">⭐</span>
+                    <h4 class="font-bold">Profissionais Certificados</h4>
+                    <p class="text-sm">Equipe altamente qualificada</p>
+                  </div>
+                  <div class="trust-card p-4 rounded-lg">
+                    <span class="block text-3xl mb-2">🛡️</span>
+                    <h4 class="font-bold">Ambiente Seguro</h4>
+                    <p class="text-sm">Localização e instalações seguras</p>
+                  </div>
+                  <div class="trust-card p-4 rounded-lg">
+                    <span class="block text-3xl mb-2">💝</span>
+                    <h4 class="font-bold">Cuidado Especial</h4>
+                    <p class="text-sm">Tratamento personalizado</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 6: Finalização -->
+              <div class="glass-card p-6 rounded-lg text-center">
+                <h3 class="text-2xl font-bold mb-4">Está Quase Lá! 🎉</h3>
+                <p class="mb-6">Clique no botão abaixo para testar o funil</p>
+                <button class="neon-button">Testar Funil</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Funil 2: Especialidades -->
+          <div class="glass-container p-8 rounded-xl mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-center">
+              Funil 2: Especialidades Veterinárias
+            </h2>
+            <div class="space-y-8">
+              <!-- Etapa 1: Especialidade -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">
+                  Etapa 1: Escolha a Especialidade
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div
+                    class="specialty-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">👨‍⚕️</span>
+                    <h4 class="font-bold">Clínico Geral</h4>
+                    <p class="text-sm">Consulta: R$ 150</p>
+                  </div>
+                  <div
+                    class="specialty-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">🔬</span>
+                    <h4 class="font-bold">Dermatologia</h4>
+                    <p class="text-sm">Consulta: R$ 200</p>
+                  </div>
+                  <div
+                    class="specialty-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">👁️</span>
+                    <h4 class="font-bold">Oftalmologia</h4>
+                    <p class="text-sm">Consulta: R$ 180</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 2: Motivo da Consulta -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">
+                  Etapa 2: Motivo da Consulta
+                </h3>
+                <div class="modern-input-container">
+                  <div class="input-icon">📝</div>
+                  <div class="input-wrapper">
+                    <label class="block mb-2"
+                      >Descreva o motivo da consulta</label
+                    >
+                    <textarea class="modern-input h-32" required></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 3: Dados do Pet -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Etapa 3: Dados do Pet</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="modern-input-container">
+                    <div class="input-icon">🐾</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Nome do Pet</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">🎂</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Idade</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">🐕</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Raça</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">⚖️</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Peso Aproximado</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 4: Histórico -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">
+                  Etapa 4: Histórico Médico
+                </h3>
+                <div class="modern-input-container">
+                  <div class="input-icon">📋</div>
+                  <div class="input-wrapper">
+                    <label class="block mb-2"
+                      >Possui histórico médico relevante?</label
+                    >
+                    <textarea class="modern-input h-32" required></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 5: Dados do Tutor -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Etapa 5: Dados do Tutor</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="modern-input-container">
+                    <div class="input-icon">👤</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Nome Completo</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">📱</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">WhatsApp</label>
+                      <input type="tel" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">📧</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">E-mail</label>
+                      <input type="email" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">📍</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Endereço</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 6: Confiança -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Etapa 6: Nossa Equipe</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div class="trust-card p-4 rounded-lg">
+                    <span class="block text-3xl mb-2">👨‍⚕️</span>
+                    <h4 class="font-bold">Especialistas</h4>
+                    <p class="text-sm">Profissionais altamente qualificados</p>
+                  </div>
+                  <div class="trust-card p-4 rounded-lg">
+                    <span class="block text-3xl mb-2">🏥</span>
+                    <h4 class="font-bold">Infraestrutura</h4>
+                    <p class="text-sm">Equipamentos modernos</p>
+                  </div>
+                  <div class="trust-card p-4 rounded-lg">
+                    <span class="block text-3xl mb-2">💊</span>
+                    <h4 class="font-bold">Farmácia</h4>
+                    <p class="text-sm">Medicamentos disponíveis</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 7: Finalização -->
+              <div class="glass-card p-6 rounded-lg text-center">
+                <h3 class="text-2xl font-bold mb-4">Consulta Agendada! 🎉</h3>
+                <p class="mb-6">Clique no botão abaixo para testar o funil</p>
+                <button class="neon-button">Testar Funil</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Funil 3: Hotel -->
+          <div class="glass-container p-8 rounded-xl mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-center">
+              Funil 3: Hotel para Pets
+            </h2>
+            <div class="space-y-8">
+              <!-- Etapa 1: Período -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">
+                  Etapa 1: Escolha o Período
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div
+                    class="period-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">🌅</span>
+                    <h4 class="font-bold">Diária</h4>
+                    <p class="text-sm">R$ 80/dia</p>
+                  </div>
+                  <div
+                    class="period-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">🌙</span>
+                    <h4 class="font-bold">Pernoite</h4>
+                    <p class="text-sm">R$ 60/noite</p>
+                  </div>
+                </div>
+                <div class="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="modern-input-container">
+                    <div class="input-icon">📅</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Data de Entrada</label>
+                      <input type="date" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">📅</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Data de Saída</label>
+                      <input type="date" class="modern-input" required />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 2: Serviços Adicionais -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">
+                  Etapa 2: Serviços Adicionais
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div
+                    class="service-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">🛁</span>
+                    <h4 class="font-bold">Banho</h4>
+                    <p class="text-sm">R$ 45</p>
+                  </div>
+                  <div
+                    class="service-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">✂️</span>
+                    <h4 class="font-bold">Tosa</h4>
+                    <p class="text-sm">R$ 60</p>
+                  </div>
+                  <div
+                    class="service-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">🏥</span>
+                    <h4 class="font-bold">Veterinário</h4>
+                    <p class="text-sm">R$ 150</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 3: Dados do Pet -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Etapa 3: Dados do Pet</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="modern-input-container">
+                    <div class="input-icon">🐾</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Nome do Pet</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">🎂</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Idade</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">🐕</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Raça</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">⚖️</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Peso Aproximado</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 4: Dados do Tutor -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Etapa 4: Dados do Tutor</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="modern-input-container">
+                    <div class="input-icon">👤</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Nome Completo</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">📱</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">WhatsApp</label>
+                      <input type="tel" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">📧</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">E-mail</label>
+                      <input type="email" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">📍</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Endereço</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 5: Confiança -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Etapa 5: Nossa Estrutura</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div class="trust-card p-4 rounded-lg">
+                    <span class="block text-3xl mb-2">🏠</span>
+                    <h4 class="font-bold">Ambiente Seguro</h4>
+                    <p class="text-sm">24h de monitoramento</p>
+                  </div>
+                  <div class="trust-card p-4 rounded-lg">
+                    <span class="block text-3xl mb-2">👨‍⚕️</span>
+                    <h4 class="font-bold">Veterinário</h4>
+                    <p class="text-sm">Plantão 24h</p>
+                  </div>
+                  <div class="trust-card p-4 rounded-lg">
+                    <span class="block text-3xl mb-2">🎮</span>
+                    <h4 class="font-bold">Diversão</h4>
+                    <p class="text-sm">Área de lazer</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 6: Finalização -->
+              <div class="glass-card p-6 rounded-lg text-center">
+                <h3 class="text-2xl font-bold mb-4">Reserva Confirmada! 🎉</h3>
+                <p class="mb-6">Clique no botão abaixo para testar o funil</p>
+                <button class="neon-button">Testar Funil</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Funil 4: Day Care -->
+          <div class="glass-container p-8 rounded-xl mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-center">
+              Funil 4: Day Care
+            </h2>
+            <div class="space-y-8">
+              <!-- Etapa 1: Plano -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Etapa 1: Escolha o Plano</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div
+                    class="plan-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">📅</span>
+                    <h4 class="font-bold">Diária</h4>
+                    <p class="text-sm">R$ 50/dia</p>
+                  </div>
+                  <div
+                    class="plan-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">📅</span>
+                    <h4 class="font-bold">Semanal</h4>
+                    <p class="text-sm">R$ 200/semana</p>
+                  </div>
+                  <div
+                    class="plan-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">📅</span>
+                    <h4 class="font-bold">Mensal</h4>
+                    <p class="text-sm">R$ 700/mês</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 2: Horário -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">
+                  Etapa 2: Horário de Funcionamento
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="modern-input-container">
+                    <div class="input-icon">🌅</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Horário de Entrada</label>
+                      <input type="time" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">🌙</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Horário de Saída</label>
+                      <input type="time" class="modern-input" required />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 3: Dados do Pet -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Etapa 3: Dados do Pet</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="modern-input-container">
+                    <div class="input-icon">🐾</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Nome do Pet</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">🎂</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Idade</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">🐕</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Raça</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">⚖️</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Peso Aproximado</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 4: Dados do Tutor -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Etapa 4: Dados do Tutor</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="modern-input-container">
+                    <div class="input-icon">👤</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Nome Completo</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">📱</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">WhatsApp</label>
+                      <input type="tel" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">📧</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">E-mail</label>
+                      <input type="email" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">📍</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Endereço</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 5: Confiança -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">
+                  Etapa 5: Nossos Diferenciais
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div class="trust-card p-4 rounded-lg">
+                    <span class="block text-3xl mb-2">🎮</span>
+                    <h4 class="font-bold">Diversão</h4>
+                    <p class="text-sm">Brincadeiras e atividades</p>
+                  </div>
+                  <div class="trust-card p-4 rounded-lg">
+                    <span class="block text-3xl mb-2">👨‍⚕️</span>
+                    <h4 class="font-bold">Monitoramento</h4>
+                    <p class="text-sm">Profissionais treinados</p>
+                  </div>
+                  <div class="trust-card p-4 rounded-lg">
+                    <span class="block text-3xl mb-2">📱</span>
+                    <h4 class="font-bold">Updates</h4>
+                    <p class="text-sm">Fotos e vídeos diários</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 6: Finalização -->
+              <div class="glass-card p-6 rounded-lg text-center">
+                <h3 class="text-2xl font-bold mb-4">
+                  Inscrição Confirmada! 🎉
+                </h3>
+                <p class="mb-6">Clique no botão abaixo para testar o funil</p>
+                <button class="neon-button">Testar Funil</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Funil 5: Produtos -->
+          <div class="glass-container p-8 rounded-xl mb-16">
+            <h2 class="text-3xl font-bold mb-6 text-center">
+              Funil 5: Produtos Premium
+            </h2>
+            <div class="space-y-8">
+              <!-- Etapa 1: Categoria -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">
+                  Etapa 1: Escolha a Categoria
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div
+                    class="category-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">🛏️</span>
+                    <h4 class="font-bold">Camas</h4>
+                    <p class="text-sm">A partir de R$ 129</p>
+                  </div>
+                  <div
+                    class="category-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">👕</span>
+                    <h4 class="font-bold">Roupas</h4>
+                    <p class="text-sm">A partir de R$ 59</p>
+                  </div>
+                  <div
+                    class="category-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">🦴</span>
+                    <h4 class="font-bold">Brinquedos</h4>
+                    <p class="text-sm">A partir de R$ 29</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 2: Produto -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">
+                  Etapa 2: Escolha o Produto
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div
+                    class="product-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">🛏️</span>
+                    <h4 class="font-bold">Cama Ortopédica</h4>
+                    <p class="text-sm">R$ 129,90</p>
+                  </div>
+                  <div
+                    class="product-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">👕</span>
+                    <h4 class="font-bold">Roupinha Shiba</h4>
+                    <p class="text-sm">R$ 59,90</p>
+                  </div>
+                  <div
+                    class="product-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                  >
+                    <span class="block text-3xl mb-2">🦴</span>
+                    <h4 class="font-bold">Brinquedo Interativo</h4>
+                    <p class="text-sm">R$ 29,90</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 3: Dados do Pet -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Etapa 3: Dados do Pet</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="modern-input-container">
+                    <div class="input-icon">🐾</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Nome do Pet</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">🎂</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Idade</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">🐕</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Raça</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">⚖️</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Peso Aproximado</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 4: Dados do Tutor -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">Etapa 4: Dados do Tutor</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div class="modern-input-container">
+                    <div class="input-icon">👤</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Nome Completo</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">📱</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">WhatsApp</label>
+                      <input type="tel" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">📧</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">E-mail</label>
+                      <input type="email" class="modern-input" required />
+                    </div>
+                  </div>
+                  <div class="modern-input-container">
+                    <div class="input-icon">📍</div>
+                    <div class="input-wrapper">
+                      <label class="block mb-2">Endereço</label>
+                      <input type="text" class="modern-input" required />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 5: Confiança -->
+              <div class="glass-card p-6 rounded-lg">
+                <h3 class="text-xl font-bold mb-4">
+                  Etapa 5: Nossos Diferenciais
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <div class="trust-card p-4 rounded-lg">
+                    <span class="block text-3xl mb-2">🚚</span>
+                    <h4 class="font-bold">Entrega</h4>
+                    <p class="text-sm">Frete grátis</p>
+                  </div>
+                  <div class="trust-card p-4 rounded-lg">
+                    <span class="block text-3xl mb-2">💳</span>
+                    <h4 class="font-bold">Pagamento</h4>
+                    <p class="text-sm">Parcelamento</p>
+                  </div>
+                  <div class="trust-card p-4 rounded-lg">
+                    <span class="block text-3xl mb-2">🔄</span>
+                    <h4 class="font-bold">Garantia</h4>
+                    <p class="text-sm">7 dias</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Etapa 6: Finalização -->
+              <div class="glass-card p-6 rounded-lg text-center">
+                <h3 class="text-2xl font-bold mb-4">Compra Confirmada! 🎉</h3>
+                <p class="mb-6">Clique no botão abaixo para testar o funil</p>
+                <button class="neon-button">Testar Funil</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="demo.js"></script>
+  </body>
+</html>

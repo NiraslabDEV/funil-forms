@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funil Forms - Pet Shop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="demo-styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body
+    class="bg-gradient-to-br from-[#0a0f1f] to-[#1a103f] text-white min-h-screen"
+  >
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section py-20 relative overflow-hidden">
+        <div class="container mx-auto px-4">
+          <div class="hero-content max-w-4xl mx-auto text-center">
+            <h1 class="text-5xl font-bold mb-6 text-white">
+              Funil de Conversão
+            </h1>
+            <p class="text-2xl mb-10">Escolha o serviço que deseja testar</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Funis Carrossel -->
+      <section class="py-16">
+        <div class="container mx-auto px-4">
+          <!-- Seletor de Funis -->
+          <div class="glass-container p-8 rounded-xl mb-16">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+              <div
+                class="funnel-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                data-funnel="banho-tosa"
+              >
+                <span class="block text-3xl mb-2">🛁</span>
+                <h4 class="font-bold">Banho e Tosa</h4>
+              </div>
+              <div
+                class="funnel-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                data-funnel="especialidades"
+              >
+                <span class="block text-3xl mb-2">👨‍⚕️</span>
+                <h4 class="font-bold">Especialidades</h4>
+              </div>
+              <div
+                class="funnel-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                data-funnel="hotel"
+              >
+                <span class="block text-3xl mb-2">🏨</span>
+                <h4 class="font-bold">Hotel</h4>
+              </div>
+              <div
+                class="funnel-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                data-funnel="daycare"
+              >
+                <span class="block text-3xl mb-2">🎮</span>
+                <h4 class="font-bold">Day Care</h4>
+              </div>
+              <div
+                class="funnel-option p-4 rounded-lg border border-secondary/30 hover:border-secondary cursor-pointer"
+                data-funnel="produtos"
+              >
+                <span class="block text-3xl mb-2">🛍️</span>
+                <h4 class="font-bold">Produtos</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Container do Funil Ativo -->
+          <div class="glass-container p-8 rounded-xl">
+            <div class="funnel-container">
+              <!-- Progress Bar -->
+              <div class="progress-bar mb-8">
+                <div class="progress-steps flex justify-between relative">
+                  <div class="step active" data-step="1">
+                    <div class="step-number">1</div>
+                  </div>
+                  <div class="step" data-step="2">
+                    <div class="step-number">2</div>
+                  </div>
+                  <div class="step" data-step="3">
+                    <div class="step-number">3</div>
+                  </div>
+                  <div class="step" data-step="4">
+                    <div class="step-number">4</div>
+                  </div>
+                  <div class="step" data-step="5">
+                    <div class="step-number">5</div>
+                  </div>
+                  <div class="step" data-step="6">
+                    <div class="step-number">6</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Steps Container -->
+              <div class="steps-container">
+                <!-- Dados do Pet -->
+                <div class="modern-input-container">
+                  <div class="input-icon">🐾</div>
+                  <div class="input-wrapper">
+                    <label class="block mb-2">Nome do Pet</label>
+                    <input
+                      type="text"
+                      class="modern-input"
+                      required
+                      data-type="pet"
+                      data-field="Nome"
+                    />
+                  </div>
+                </div>
+                <div class="modern-input-container">
+                  <div class="input-icon">🎂</div>
+                  <div class="input-wrapper">
+                    <label class="block mb-2">Idade</label>
+                    <input
+                      type="text"
+                      class="modern-input"
+                      required
+                      data-type="pet"
+                      data-field="Idade"
+                    />
+                  </div>
+                </div>
+                <div class="modern-input-container">
+                  <div class="input-icon">🐕</div>
+                  <div class="input-wrapper">
+                    <label class="block mb-2">Raça</label>
+                    <input
+                      type="text"
+                      class="modern-input"
+                      required
+                      data-type="pet"
+                      data-field="Raça"
+                    />
+                  </div>
+                </div>
+                <div class="modern-input-container">
+                  <div class="input-icon">⚖️</div>
+                  <div class="input-wrapper">
+                    <label class="block mb-2">Peso Aproximado</label>
+                    <input
+                      type="text"
+                      class="modern-input"
+                      required
+                      data-type="pet"
+                      data-field="Peso"
+                    />
+                  </div>
+                </div>
+
+                <!-- Dados do Tutor -->
+                <div class="modern-input-container">
+                  <div class="input-icon">👤</div>
+                  <div class="input-wrapper">
+                    <label class="block mb-2">Nome Completo</label>
+                    <input
+                      type="text"
+                      class="modern-input"
+                      required
+                      data-type="tutor"
+                      data-field="Nome"
+                    />
+                  </div>
+                </div>
+                <div class="modern-input-container">
+                  <div class="input-icon">📱</div>
+                  <div class="input-wrapper">
+                    <label class="block mb-2">WhatsApp</label>
+                    <input
+                      type="tel"
+                      class="modern-input"
+                      required
+                      data-type="tutor"
+                      data-field="WhatsApp"
+                    />
+                  </div>
+                </div>
+                <div class="modern-input-container">
+                  <div class="input-icon">📧</div>
+                  <div class="input-wrapper">
+                    <label class="block mb-2">E-mail</label>
+                    <input
+                      type="email"
+                      class="modern-input"
+                      required
+                      data-type="tutor"
+                      data-field="E-mail"
+                    />
+                  </div>
+                </div>
+                <div class="modern-input-container">
+                  <div class="input-icon">📍</div>
+                  <div class="input-wrapper">
+                    <label class="block mb-2">Endereço</label>
+                    <input
+                      type="text"
+                      class="modern-input"
+                      required
+                      data-type="tutor"
+                      data-field="Endereço"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Navigation Buttons -->
+              <div class="flex justify-between mt-8">
+                <button class="neon-button prev-step" style="display: none">
+                  Anterior
+                </button>
+                <button class="neon-button next-step">Próximo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="funil-forms.js"></script>
+  </body>
+</html>
