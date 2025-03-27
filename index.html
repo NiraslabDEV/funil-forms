@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funil Forms - Transforme seu Negócio em uma Máquina de Vendas</title>
+    <style>
+      :root {
+        --primary: #ff6b6b;
+        --secondary: #4ecdc4;
+        --glass-bg: rgba(255, 255, 255, 0.1);
+        --glass-border: rgba(255, 255, 255, 0.2);
+        --text-color: #ffffff;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        background: linear-gradient(135deg, #1a1a1a, #2d3436);
+        color: var(--text-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+      }
+
+      .hero {
+        text-align: center;
+        margin-bottom: 4rem;
+        max-width: 800px;
+      }
+
+      .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1.5rem;
+        background: linear-gradient(45deg, var(--primary), var(--secondary));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        line-height: 1.2;
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.6;
+        margin-bottom: 2rem;
+      }
+
+      .benefits {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 3rem;
+        flex-wrap: wrap;
+      }
+
+      .benefit {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: var(--glass-bg);
+        padding: 0.8rem 1.5rem;
+        border-radius: 2rem;
+        border: 1px solid var(--glass-border);
+        backdrop-filter: blur(10px);
+      }
+
+      .benefit i {
+        color: var(--secondary);
+      }
+
+      .container {
+        max-width: 1200px;
+        width: 100%;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+      }
+
+      .card {
+        background: var(--glass-bg);
+        border: 1px solid var(--glass-border);
+        border-radius: 1rem;
+        padding: 2rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        backdrop-filter: blur(10px);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          45deg,
+          transparent,
+          rgba(255, 255, 255, 0.1),
+          transparent
+        );
+        transform: translateX(-100%);
+        transition: 0.5s;
+      }
+
+      .card:hover::before {
+        transform: translateX(100%);
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        border-color: var(--primary);
+      }
+
+      .card i {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        color: var(--secondary);
+      }
+
+      .card h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        color: var(--text-color);
+      }
+
+      .card p {
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+
+      .card .features {
+        list-style: none;
+        margin-bottom: 1.5rem;
+      }
+
+      .card .features li {
+        margin-bottom: 0.5rem;
+        color: rgba(255, 255, 255, 0.7);
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .card .features li i {
+        font-size: 1rem;
+        color: var(--secondary);
+      }
+
+      .card .cta {
+        width: 100%;
+        margin-top: 1.5rem;
+        padding: 1rem;
+        background: linear-gradient(45deg, var(--primary), var(--secondary));
+        border: none;
+        border-radius: 2rem;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      .card .cta:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(255, 107, 107, 0.3);
+      }
+
+      .price {
+        font-size: 1.2rem;
+        color: var(--secondary);
+        margin-bottom: 1rem;
+        font-weight: bold;
+      }
+
+      .guarantee {
+        text-align: center;
+        margin-top: 3rem;
+        padding: 2rem;
+        background: var(--glass-bg);
+        border-radius: 1rem;
+        border: 1px solid var(--glass-border);
+        backdrop-filter: blur(10px);
+      }
+
+      .guarantee h3 {
+        color: var(--secondary);
+        margin-bottom: 1rem;
+      }
+
+      @media (max-width: 768px) {
+        .grid {
+          grid-template-columns: 1fr;
+          padding: 1rem;
+        }
+
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .card {
+          padding: 1.5rem;
+        }
+
+        .benefits {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="hero">
+      <h1>Transforme seu Negócio em uma Máquina de Vendas</h1>
+      <p>
+        Descubra como aumentar suas vendas em até 300% com funis de vendas
+        otimizados para seu nicho
+      </p>
+      <div class="benefits">
+        <div class="benefit">
+          <i class="fas fa-rocket"></i>
+          <span>Resultados em 24h</span>
+        </div>
+        <div class="benefit">
+          <i class="fas fa-shield-alt"></i>
+          <span>Garantia de 7 dias</span>
+        </div>
+        <div class="benefit">
+          <i class="fas fa-chart-line"></i>
+          <span>ROI comprovado</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="grid">
+        <div class="card" onclick="window.location.href='funil-forms.html'">
+          <i class="fas fa-paw"></i>
+          <h2>Pet Shop</h2>
+          <p>
+            Funil completo para pet shops com serviços de banho, tosa, hotel e
+            produtos.
+          </p>
+          <ul class="features">
+            <li><i class="fas fa-check"></i> Agendamento automático</li>
+            <li><i class="fas fa-check"></i> Fidelização de clientes</li>
+            <li><i class="fas fa-check"></i> Gestão de serviços</li>
+            <li><i class="fas fa-check"></i> Integração com WhatsApp</li>
+          </ul>
+          <div class="price">Comece Agora - R$ 0</div>
+          <button class="cta">Começar Agora</button>
+        </div>
+        <div
+          class="card"
+          onclick="window.location.href='funil-forms.html?nicho=cabeleireiro'"
+        >
+          <i class="fas fa-cut"></i>
+          <h2>Cabeleireiro</h2>
+          <p>
+            Funil otimizado para salões de beleza com agendamento e fidelidade.
+          </p>
+          <ul class="features">
+            <li><i class="fas fa-check"></i> Sistema de fidelidade</li>
+            <li><i class="fas fa-check"></i> Agendamento online</li>
+            <li><i class="fas fa-check"></i> Gestão de horários</li>
+            <li><i class="fas fa-check"></i> Campanhas promocionais</li>
+          </ul>
+          <div class="price">Comece Agora - R$ 0</div>
+          <button class="cta">Começar Agora</button>
+        </div>
+        <div
+          class="card"
+          onclick="window.location.href='funil-forms.html?nicho=clinica'"
+        >
+          <i class="fas fa-hospital"></i>
+          <h2>Clínica</h2>
+          <p>Funil especializado para clínicas médicas e consultórios.</p>
+          <ul class="features">
+            <li><i class="fas fa-check"></i> Agendamento inteligente</li>
+            <li><i class="fas fa-check"></i> Histórico de pacientes</li>
+            <li><i class="fas fa-check"></i> Gestão de prontuários</li>
+            <li><i class="fas fa-check"></i> Lembretes automáticos</li>
+          </ul>
+          <div class="price">Comece Agora - R$ 0</div>
+          <button class="cta">Começar Agora</button>
+        </div>
+        <div
+          class="card"
+          onclick="window.location.href='funil-forms.html?nicho=estetica'"
+        >
+          <i class="fas fa-spa"></i>
+          <h2>Estética</h2>
+          <p>Funil completo para clínicas de estética e bem-estar.</p>
+          <ul class="features">
+            <li><i class="fas fa-check"></i> Gestão de procedimentos</li>
+            <li><i class="fas fa-check"></i> Agendamento flexível</li>
+            <li><i class="fas fa-check"></i> Controle de estoque</li>
+            <li><i class="fas fa-check"></i> Relatórios de vendas</li>
+          </ul>
+          <div class="price">Comece Agora - R$ 0</div>
+          <button class="cta">Começar Agora</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="guarantee">
+      <h3><i class="fas fa-shield-alt"></i> Garantia de Satisfação</h3>
+      <p>
+        Se você não ficar 100% satisfeito com nosso sistema, devolvemos seu
+        dinheiro em até 7 dias. Sem perguntas, sem burocracia.
+      </p>
+    </div>
+
+    <script>
+      // Adiciona efeito de hover nos cards
+      document.querySelectorAll(".card").forEach((card) => {
+        card.addEventListener("mouseenter", () => {
+          card.style.transform = "translateY(-10px)";
+        });
+        card.addEventListener("mouseleave", () => {
+          card.style.transform = "translateY(0)";
+        });
+      });
+    </script>
+  </body>
+</html>
